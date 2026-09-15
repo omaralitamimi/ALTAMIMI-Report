@@ -1,0 +1,19 @@
+[project]
+name = "altamimi-report"
+version = "1.0.0"
+description = "A privacy-first social media reporting assistant with local history and manual submission flow."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "ALTAMIMI"}]
+dependencies = ["PySide6>=6.8,<7"]
+
+[project.scripts]
+altamimi-report = "altamimi_report.ui:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["altamimi_report*"]
